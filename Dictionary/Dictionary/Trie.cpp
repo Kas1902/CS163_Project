@@ -571,7 +571,8 @@ void build_edit_trie(Trie& edit_tree, int data, std::wstring keyword)
     }
 }
 
-void export_edit_file(std::wstring path, std::wstring keyword){
+void export_edit_file(std::wstring path, std::wstring keyword)
+{
     std::wofstream fout(path);
     if (!fout.is_open())
         std::wcout << "Error to load file\n";
